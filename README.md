@@ -34,3 +34,39 @@ Install them with:
 
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage
+
+1. Open Minesweeper and make sure the window is fully visible.
+2. Adjust board coordinates in scripts if needed:
+
+```python
+board_x, board_y = 302, 209
+```
+3. Run the script you want:
+```
+python main.py       # Smart solver
+python randombot.py  # Random clicker
+python analyzer.py   # Board analyzer
+```
+4. Watch the bot play Minesweeper automatically! 🎯
+
+---
+
+## 🤖 How It Works
+1. Board Reading – Captures the screen and identifies tiles using pixel colors.
+2. Logic Application (main.py):
+   - Rule 1: If the number of hidden tiles + flags equals the number on a tile → mark hidden tiles as bombs.
+   - Rule 2: If the number of flags equals the number on a tile → mark remaining neighbors as safe.
+3. Actions – Clicks safe tiles and flags bombs using PyAutoGUI.
+4. Random Clicker – randombot.py clicks random tiles for casual play or testing.
+
+---
+
+## ⚠️ Notes
+ - Make sure display scale is 100% for accurate pixel detection.
+ - May not work correctly with custom Minesweeper skins or tile sizes.
+ - Use responsibly — avoid automated play in competitive or online versions.
