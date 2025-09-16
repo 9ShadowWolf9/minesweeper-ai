@@ -10,7 +10,7 @@ This repository contains scripts to interact with a Minesweeper game on Windows:
 
 - **`main.py`** – Smart solver using basic Minesweeper deduction rules.
 - **`randombot.py`** – Random tile clicker bot.
-- **`analyzer.py`** – Reads the Minesweeper board and prints it to the console for debugging/visualization.
+- **`analyzer.py`** – Reads the Minesweeper board and prints it to the console for debugging and visualization.
 - **`probability_bot.py`** – Concept of bot with integrated math probability (in development).
 
 The bots use **PyAutoGUI** for mouse control and **Pillow** for screen capture.
